@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>House Addition | Rob Baldwin</title>
+<meta name="description" content="Progress photos from the house addition build at 6065 Quail Rock Ln.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand"><a href="../">Rob Baldwin</a> <span>/ House Addition</span></div>
+  <nav>
+    <a href="../">Home</a>
+    <a href="../rv4/">RV-4 Build</a>
+    <a href="../addition/" class="active">House Addition</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-banner">
+    <h1>House Addition &mdash; 6065 Quail Rock Ln</h1>
+    <p>A photo log of the addition build, start to finish.</p>
+    <div class="stats-row">
+      <div class="stat"><div class="num" id="stat-count">&mdash;</div><div class="label">Photos</div></div>
+      <div class="stat"><div class="num" id="stat-span">&mdash;</div><div class="label">Started</div></div>
+      <div class="stat"><div class="num" id="stat-latest">&mdash;</div><div class="label">Latest Update</div></div>
+    </div>
+  </section>
+
+  <div class="filter-bar" id="filter-bar">
+    <button class="filter-chip active" data-filter="all">All</button>
+  </div>
+
+  <div class="gallery" id="gallery"></div>
+</main>
+
+<footer class="site-footer">
+  &copy; <span id="year"></span> Rob Baldwin &middot; robbaldwin.com
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lb-close">&times;</button>
+  <button class="lb-nav lb-prev" id="lb-prev">&larr;</button>
+  <img id="lb-img" src="" alt="">
+  <button class="lb-nav lb-next" id="lb-next">&rarr;</button>
+  <div class="lb-caption" id="lb-caption"></div>
+</div>
+
+<script src="../assets/gallery.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
